@@ -1,0 +1,5 @@
+def display_details():
+    num=int(input("enter the product id to display details:"))
+    v2.execute("select * from products where product = ?", (num,))
+    display=v2.fetchone()
+    print(display)
